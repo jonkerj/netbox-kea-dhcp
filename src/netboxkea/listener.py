@@ -66,7 +66,11 @@ class WebhookListener:
         
         # very basic health check, basically proves bottle is already/still running
         # enough for Kubernetes probes
+<<<<<<< HEAD
         @bottle.route('/health/', 'POST')
+=======
+        @bottle.route('/health/')
+>>>>>>> add-health-route
         def health():
             return 'ok'
 
